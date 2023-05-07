@@ -71,6 +71,13 @@ List<Restaurants> parseRestaurant(String? json) {
     return [];
   }
 
-  final List parsed = jsonDecode(json);
-  return parsed.map((json) => Restaurants.fromJson(json)).toList();
+  final Map<String, dynamic> parsed = jsonDecode(json);
+
+  final List<Restaurants> listRestaurant = [];
+
+  parsed['restaurants'].forEach((restaurant) {
+    listRestaurant.add(Restaurants.fromJson(restaurant));
+  });
+
+  return listRestaurant;
 }
