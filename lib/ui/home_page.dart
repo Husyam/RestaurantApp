@@ -65,40 +65,6 @@ class HomePage extends StatelessWidget {
         ),
       ),
     );
-    // return Container(
-    //   padding: EdgeInsets.symmetric(
-    //     horizontal: 16,
-    //     vertical: 8.0,
-    //   ),
-    //   child: Row(
-    //     children: [
-    //       Image.network(
-    //         restaurants.pictureId,
-    //         width: 100,
-    //       ),
-    //       Column(
-    //         crossAxisAlignment: CrossAxisAlignment.start,
-    //         children: [
-    //           Padding(
-    //             padding: EdgeInsets.only(left: 20),
-    //           ),
-    //           Text(restaurants.name),
-    //           Row(
-    //             children: [
-    //               Icon(Icons.location_on),
-    //               Text(restaurants.city),
-    //             ],
-    //           ),
-    //           Row(
-    //             children: [
-    //               Icon(Icons.star),
-    //               Text(restaurants.rating.toString()),
-    //             ],
-    //           )
-    //         ],
-    //       ),
-    //     ],
-    //   ),
-    // );
+    //
   }
 }

@@ -73,32 +73,24 @@ class DetailPage extends StatelessWidget {
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Text('Menus'),
+                          Text('Menus:'),
                           SizedBox(
-                            height: 0,
+                            height: 10,
                           ),
                           Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Text('Foods'),
-                              Column(
-                                children: [
-                                  Card(
-                                    child: SizedBox(
-                                      width: double.infinity,
-                                      height: 120,
-                                      child: Center(
-                                        child: Column(
-                                          children: [
-                                            Text(
-                                              restaurant.menus.foods.toString(),
-                                            ),
-                                          ],
-                                        ),
-                                      ),
-                                    ),
-                                  ),
-                                ],
+                              Text('Foods:'),
+                              Text(
+                                restaurant.menus.foods
+                                    .map((foods) => foods.name)
+                                    .toString(),
+                              ),
+                              Text('Drinks:'),
+                              Text(
+                                restaurant.menus.drinks
+                                    .map((drink) => drink.name)
+                                    .toString(),
                               ),
                             ],
                           ),

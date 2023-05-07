@@ -51,11 +51,10 @@ class Menus {
 }
 
 class Drink {
-  String name;
-
   Drink({
     required this.name,
   });
+  String name;
 
   factory Drink.fromJson(Map<String, dynamic> drinkk) => Drink(
         name: drinkk["name"],
